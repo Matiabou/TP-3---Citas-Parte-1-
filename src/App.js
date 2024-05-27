@@ -10,27 +10,27 @@ function App() {
   const [citas, setCitas] = useState([
     {
       ID: 1,
-      Mascota: "Nina",
-      Dueño:"Martin",
-      Fecha:"2021-08-05",
-      Hora:"8:20",
-      Sintomas:"Le duele la pierna"
+      mascota: "Nina",
+      dueño:"Martin",
+      fecha:"2021-08-05",
+      hora:"8:20",
+      sintomas:"Le duele la pierna"
     },
     {
       ID: 2,
-      Mascota: "Sifon",
-      Dueño:"Flecha",
-      Fecha:"2023-08-05",
-      Hora:"09:24",
-      Sintomas:"Duerme mucho"
+      mascota: "Sifon",
+      dueño:"Flecha",
+      fecha:"2023-08-04",
+      hora:"09:24",
+      sintomas:"Duerme mucho"
     },
     {
       ID: 3,
-      Mascota: "Floki",
-      Dueño:"Ari",
-      Fecha:"2023-08-05",
-      Hora:"16:15",
-      Sintomas:"No esta comiendo"
+      mascota: "Floki",
+      dueño:"Ari",
+      fecha:"2023-08-05",
+      hora:"16:15",
+      sintomas:"No esta comiendo"
     }
   ]
   )

@@ -1,12 +1,12 @@
 
 import './Cita.css';
 
-const Cita = ({ mascota, dueno, fecha, hora, sintomas,ID, setCitas, citas}) => {
+const Cita = ({ mascota, dueno, fecha, hora, sintomas, ID, setCitas, citas }) => {
   const eliminarCita = () => {
-  if(window.confirm("Desea eliminar la cita?")){
-    const nuevasCitas = citas.filter(cita => cita.ID !== ID); 
-    setCitas(nuevasCitas);
-  }
+    if (window.confirm("Desea eliminar la cita?")) {
+      const nuevasCitas = citas.filter(cita => cita.ID !== ID);
+      setCitas(nuevasCitas);
+    }
   }
   return (
     <div className="Cita">
@@ -15,8 +15,8 @@ const Cita = ({ mascota, dueno, fecha, hora, sintomas,ID, setCitas, citas}) => {
       <p>Fecha: <span>{fecha}</span> </p>
       <p>Hora: <span>{hora}</span> </p>
       <p>Sintomas: <span>{sintomas}</span> </p>
-      <button class="button elimnar u-full-width" onClick={eliminarCita}>Eliminar ×</button>    
-      </div>
+      <button className="button elimnar u-full-width" onClick={eliminarCita}>Eliminar ×</button>
+    </div>
   );
 }
 
